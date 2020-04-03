@@ -3,6 +3,12 @@
 
 modified and extended version; see Changelog.txt 
 
+# Compile into a nginx 1.16 dynamic module
+
+Modify config to fit nginx 1.16.1.
+Config a nginx dynamic using './configure --add-dynamic-module=../nginx-sticky-module-ng/' with nginx source.
+Copy objs/nginx-stick-module.so to /etc/nginx/modules/
+
 # Description
 
 A nginx module to add a sticky cookie to be always forwarded to the same
